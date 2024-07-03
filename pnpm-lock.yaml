@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ardasevinc/fastify-graceful-shutdown':
+        specifier: ^3.6.0
+        version: 3.6.0
       '@fastify/env':
         specifier: ^4.3.0
         version: 4.4.0
@@ -29,9 +32,6 @@ importers:
       fastify:
         specifier: ^4.27.0
         version: 4.28.1
-      fastify-graceful-shutdown:
-        specifier: ^3.5.3
-        version: 3.5.3
       fastify-plugin:
         specifier: ^4.5.1
         version: 4.5.1
@@ -65,6 +65,10 @@ importers:
         version: 5.5.3
 
 packages:
+
+  '@ardasevinc/fastify-graceful-shutdown@3.6.0':
+    resolution: {integrity: sha512-Uzx++D0CdjlI61aBBp5v96BjG17oRLrGISaHdTMhq2Br+NevwHGG4/piwArmdWJRHeThrkUH03afTsLSINOq5Q==}
+    engines: {node: '>=16.0.0'}
 
   '@ardasevinc/prettier-config@0.1.4':
     resolution: {integrity: sha512-nR09iKTWyyXBpo+PStUfaP/AKhPPXYCiL/L8RAsA5Du3c1uNadaqCWEo64Yp92X3cU8phBisl7bFCF+x1J9cgg==}
@@ -342,10 +346,6 @@ packages:
 
   fast-uri@2.4.0:
     resolution: {integrity: sha512-ypuAmmMKInk5q7XcepxlnUWDLWv4GFtaJqAzWKqn62IpQ3pejtr5dTVbt3vwqVaMKmkNR55sTT+CqUKIaT21BA==}
-
-  fastify-graceful-shutdown@3.5.3:
-    resolution: {integrity: sha512-Qb7QfvHsQA8GZ0eop430pZ/BQ4EIHnec5wqUkpbfdE3S0PXI5Kbt3Nqtc/z8PBjrsX4y1xOuNesYUFfWaTd8IA==}
-    engines: {node: '>=16.0.0'}
 
   fastify-plugin@4.5.1:
     resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
@@ -828,6 +828,11 @@ packages:
 
 snapshots:
 
+  '@ardasevinc/fastify-graceful-shutdown@3.6.0':
+    dependencies:
+      fastify-plugin: 4.5.1
+      fastparallel: 2.4.1
+
   '@ardasevinc/prettier-config@0.1.4': {}
 
   '@babel/runtime@7.24.7':
@@ -1110,11 +1115,6 @@ snapshots:
   fast-safe-stringify@2.1.1: {}
 
   fast-uri@2.4.0: {}
-
-  fastify-graceful-shutdown@3.5.3:
-    dependencies:
-      fastify-plugin: 4.5.1
-      fastparallel: 2.4.1
 
   fastify-plugin@4.5.1: {}
 

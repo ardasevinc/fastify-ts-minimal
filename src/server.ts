@@ -2,7 +2,7 @@ import Fastify from 'fastify';
 import { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
 import appEnv from '@/lib/plugins/env.js';
 import fastifySensible from '@fastify/sensible';
-import fastifyGracefulShutdown from 'fastify-graceful-shutdown';
+import fastifyGracefulShutdown from '@ardasevinc/fastify-graceful-shutdown';
 import appRouter from '@/lib/plugins/router.js';
 import { type Env } from '@/lib/schemas/env.js';
 
