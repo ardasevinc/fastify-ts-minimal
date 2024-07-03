@@ -42,6 +42,9 @@ importers:
         specifier: ^5.0.7
         version: 5.0.7
     devDependencies:
+      '@ardasevinc/prettier-config':
+        specifier: ^0.1.4
+        version: 0.1.4
       '@types/node':
         specifier: ^20
         version: 20.14.9
@@ -62,6 +65,10 @@ importers:
         version: 5.5.3
 
 packages:
+
+  '@ardasevinc/prettier-config@0.1.4':
+    resolution: {integrity: sha512-nR09iKTWyyXBpo+PStUfaP/AKhPPXYCiL/L8RAsA5Du3c1uNadaqCWEo64Yp92X3cU8phBisl7bFCF+x1J9cgg==}
+    engines: {npm: '>=9'}
 
   '@babel/runtime@7.24.7':
     resolution: {integrity: sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==}
@@ -820,6 +827,8 @@ packages:
     engines: {node: '>=12'}
 
 snapshots:
+
+  '@ardasevinc/prettier-config@0.1.4': {}
 
   '@babel/runtime@7.24.7':
     dependencies:
